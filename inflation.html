@@ -161,7 +161,7 @@ function calculate() {
 				return;
     }
 
-		var kroner = document.getElementById("kroner").value;
+		var kroner = document.getElementById("kroner").value.replace(",", ".");
 		if (kroner == "") {
 				alert("Du skal skrive antal kroner som skal konverteres.");
 				return;
